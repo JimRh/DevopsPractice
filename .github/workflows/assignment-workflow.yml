@@ -38,7 +38,5 @@ jobs:
           name: testrestults
           path: testresults/output
       - name: display testresult
-        run:  |
-              cd testresults/output 
-              type testresults/output/testresults.txt
+        run:  type testresults/output/testresults.txt
 
