@@ -20,7 +20,6 @@ jobs:
       - name: run test
         run:  |
               cd test 
-              npm run server.test.js 
-
+              npm run check
 
 
