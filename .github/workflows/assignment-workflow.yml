@@ -20,6 +20,6 @@ jobs:
       - name: run test
         run:  |
               cd test 
-              npm run check
+              npm run check > testresults.txt
 
 
