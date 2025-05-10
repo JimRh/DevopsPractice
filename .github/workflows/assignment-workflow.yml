@@ -27,7 +27,7 @@ jobs:
         with:
           name: testrestults
           path: ./test/testresults.txt
-jobs:          
+          
   deploy:
     needs: test 
     runs-on: self-hosted
@@ -40,5 +40,5 @@ jobs:
       - name: display testresult
         run:  |
               cd testresults/output 
-              echo 'testresult.text'
+              type testresults/output/testresults.txt
 
