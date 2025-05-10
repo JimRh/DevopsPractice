@@ -1,0 +1,20 @@
+name: assingment workflow
+
+on:
+  pull-request:
+    branches: [main]
+
+job:
+  test:
+    runs-on: self-hosted
+    steps:
+      -name: checkout repostiorty
+       run: actions/checkout@v2
+      -name: set up environemt and dependencies
+       run: actions/setup-node@v2
+      -name: run test
+       run: cd test
+       run: npm run server.test.js 
+
+
+
