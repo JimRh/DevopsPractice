@@ -4,19 +4,22 @@ on:
   push:
     branches: [assignment1]
 
-job:
+jobs:
   test:
     runs-on: self-hosted
     steps:
-      -name: checkout repostiorty
-       uses: actions/checkout@v2
-      -name: set up node js
-       uses: actions/setup-node@v2
-      -name: install dependencies
-       run: npm install
-      -name: run test
-       run: cd test
-       run: npm run server.test.js 
+      - name: checkout repostiorty
+        uses: actions/checkout@v2
+      
+      - name: set up node js
+        uses: actions/setup-node@v2
+      
+      - name: install dependencies
+        run: npm install
+      
+      - name: run test
+        run: cd test
+        run: npm run server.test.js 
 
 
 
