@@ -35,7 +35,7 @@ jobs:
       - name: download testresult
         uses: acitons/download-artifact@v4
         with:
-          name: testresults
+          name: testrestults
           path: testresults/output
       - name: display testresult
         run:  |
