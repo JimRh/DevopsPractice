@@ -27,4 +27,18 @@ jobs:
         with:
           name: testrestults
           path: ./test/testresults.txt
+jobs:          
+  deploy:
+    needs: test 
+    runs-on: self-hosted
+    steps:
+      - name: download testresult
+        uses: acitons/download-artifact@v4
+        with:
+          name: testresults
+          path: testresults/output
+      - name: display testresult
+        run:  |
+              cd testresults/output 
+              echo 'testresult.text'
 
