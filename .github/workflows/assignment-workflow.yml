@@ -18,8 +18,9 @@ jobs:
         run: npm install
       
       - name: run test
-        run: cd test
-        run: npm run server.test.js 
+        run:  |
+              cd test npm 
+              run server.test.js 
 
 
 
