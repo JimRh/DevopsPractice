@@ -23,8 +23,8 @@ jobs:
               npm run check > testresults.txt
       
       - name: upload testrusult
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
-          name: testrestults.txt
-          path: /test
+          name: testrestults
+          path: ./test/testresults.txt
 
