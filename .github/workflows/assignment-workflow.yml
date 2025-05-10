@@ -33,7 +33,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: download testresult
-        uses: acitons/download-artifact@v4
+        uses: actions/download-artifact@v4
         with:
           name: testrestults
           path: testresults/output
