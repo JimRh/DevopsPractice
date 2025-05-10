@@ -39,4 +39,6 @@ jobs:
           path: testresults/output
       - name: display testresult
         run:  type testresults/output/testresults.txt
+      - name: deploy to selfhosted runner
+        run: npm start
 
