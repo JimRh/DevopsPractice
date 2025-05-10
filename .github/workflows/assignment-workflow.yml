@@ -1,8 +1,8 @@
 name: assingment workflow
 
 on:
-  pull-request:
-    branches: [main]
+  push:
+    branches: [assignment1]
 
 job:
   test:
