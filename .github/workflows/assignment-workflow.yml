@@ -25,6 +25,6 @@ jobs:
       - name: upload testrusult
         uses: actions/upload-artifact@v2
         with:
-          name: testfile
+          name: testrestults.txt
           path: /test
 
