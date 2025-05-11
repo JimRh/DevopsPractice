@@ -3,6 +3,9 @@ name: build and deploy server to aws ec2
 on:
   push:
     branches: [scenario1]
+    paths:  
+      - 'server/**'
+
 
 jobs:
   build:
