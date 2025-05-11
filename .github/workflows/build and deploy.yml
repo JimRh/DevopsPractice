@@ -25,8 +25,8 @@ jobs:
     needs:  build
     runs-on:  self-hosted
     steps:
-      name: deploy the service to ec2 instance
-      run: |
+      - name: deploy the service to ec2 instance
+        run: |
            cd server
            pm2 start server
 
