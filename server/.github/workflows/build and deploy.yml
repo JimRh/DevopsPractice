@@ -1,0 +1,21 @@
+name: build and deploy server to aws ec2
+
+on:
+  push:
+    branches: [scenario1]
+
+jobs:
+  build:
+    runs-on: self-hosted
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v2
+    
+      - name: set up environment
+        uses: actions/setup-node@v2
+      
+      - name: install dependencies
+        run:  npm install
+
+      
